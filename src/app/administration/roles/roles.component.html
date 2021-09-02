@@ -1,1 +1,13 @@
 <p>roles works!</p>
+<button
+  class="mat-warn"
+  mat-button
+  [routerLink]="['/componentA', { paramOne: 'valueOne', paramTwo: 'valueTwo' }]">
+  Optional Parameters
+</button>
+<button
+  class="mat-warn"
+  mat-button
+  [routerLink]="['/componentA/routeParamValue']">
+  Route Parameters
+</button>

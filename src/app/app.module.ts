@@ -9,12 +9,17 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatButtonModule} from "@angular/material/button";
 import { HomeComponent } from './home/home.component';
 import {AdministrationModule} from "./administration/administration.module";
+import {MatMenuModule} from "@angular/material/menu";
+import {MatCardModule} from "@angular/material/card";
+import { NotFoundComponentComponent } from './not-found-component/not-found-component.component';
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
     AppComponent,
     ComponentAComponent,
-    HomeComponent
+    HomeComponent,
+    NotFoundComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +27,10 @@ import {AdministrationModule} from "./administration/administration.module";
     NoopAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    AdministrationModule
+    AdministrationModule,
+    MatMenuModule,
+    MatCardModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,6 +4,12 @@
     <button mat-button class="mat-primary" [routerLink]="['/']">Home</button>
     <button mat-button class="mat-primary" [routerLink]="['/componentA']">Component A</button>
     <button mat-button class="mat-primary" [routerLink]="['/administration']">Admin</button>
+    <button mat-button [matMenuTriggerFor]="menu">Lazy</button>
+    <mat-menu #menu="matMenu">
+      <button mat-button class="mat-primary" [routerLink]="['/lazy/lazyA']">Lazy A</button>
+      <button mat-button class="mat-primary" [routerLink]="['/lazy/lazyB']">Lazy B</button>
+      <button mat-button class="mat-primary" [routerLink]="['/lazy/lazyC']">Lazy C</button>
+    </mat-menu>
   </mat-toolbar>
 </div>
 <div role="main">
