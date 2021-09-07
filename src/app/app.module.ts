@@ -17,6 +17,8 @@ import { NewsComponent } from './home/news/news.component';
 import { SystemNewsComponent } from './home/system-news/system-news.component';
 import { OrganizationNewsComponent } from './home/organization-news/organization-news.component';
 import { UserNewsComponent } from './home/user-news/user-news.component';
+import { AdBarComponent } from './home/ad-bar/ad-bar.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -27,19 +29,21 @@ import { UserNewsComponent } from './home/user-news/user-news.component';
     NewsComponent,
     SystemNewsComponent,
     OrganizationNewsComponent,
-    UserNewsComponent
+    UserNewsComponent,
+    AdBarComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NoopAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    AdministrationModule,
-    MatMenuModule,
-    MatCardModule,
-    MatIconModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NoopAnimationsModule,
+        MatToolbarModule,
+        MatButtonModule,
+        AdministrationModule,
+        MatMenuModule,
+        MatCardModule,
+        MatIconModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

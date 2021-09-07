@@ -1,10 +1,11 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output, ViewEncapsulation} from '@angular/core';
 import {BaseNews} from "../news/base-news";
 
 @Component({
   selector: 'app-system-news',
   templateUrl: './system-news.component.html',
-  styleUrls: ['./system-news.component.css']
+  styleUrls: ['./system-news.component.css'],
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class SystemNewsComponent implements OnInit, BaseNews<boolean> {
 

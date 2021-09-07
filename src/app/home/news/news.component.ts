@@ -1,11 +1,12 @@
 import {
   AfterViewInit,
   Component,
-  ComponentFactoryResolver, OnDestroy,
-  OnInit,
+  ComponentFactoryResolver,
+  OnDestroy,
   Type,
   ViewChild,
-  ViewContainerRef
+  ViewContainerRef,
+  ViewEncapsulation
 } from '@angular/core';
 import {SystemNewsComponent} from "../system-news/system-news.component";
 import {OrganizationNewsComponent} from "../organization-news/organization-news.component";
@@ -17,7 +18,8 @@ import {Subscription} from "rxjs";
 @Component({
   selector: 'app-news',
   templateUrl: './news.component.html',
-  styleUrls: ['./news.component.css']
+  styleUrls: ['./news.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class NewsComponent implements AfterViewInit, OnDestroy {
 
