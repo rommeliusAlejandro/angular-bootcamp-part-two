@@ -21,6 +21,7 @@ import {AdBarComponent} from './home/ad-bar/ad-bar.component';
 import {FormsModule} from "@angular/forms";
 import {CommonsModule} from "../../projects/commons/src/lib/commons.module";
 import {ChatModule} from "../../projects/ui-components/src/lib/chat/chat.module";
+import {MenuModule} from '@dh-rall/ui-elements';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import {ChatModule} from "../../projects/ui-components/src/lib/chat/chat.module"
     MatIconModule,
     FormsModule,
     CommonsModule,
-    ChatModule
+    ChatModule,
+    MenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

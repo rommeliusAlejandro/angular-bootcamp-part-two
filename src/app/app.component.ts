@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {ChatMessage} from "../../projects/ui-components/src/lib/model/chat/chat-message";
+import {MenuItem} from '@dh-rall/ui-elements';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,11 @@ export class AppComponent {
 
   chatMessages: ChatMessage[] = [];
 
+  menuItems: MenuItem[] = [
+    {
+      path: '/path1', label: 'Path1'
+    }
+  ]
 
   constructor() {
     this.chatMessages = [
@@ -37,5 +43,9 @@ export class AppComponent {
 
   handleMessages(chatMessage: ChatMessage) {
     this.chatMessages.push(chatMessage);
+  }
+
+  handleActive(label: string) {
+    alert(label);
   }
 }

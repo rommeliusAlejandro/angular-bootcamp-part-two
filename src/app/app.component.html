@@ -12,6 +12,7 @@
     </mat-menu>
   </mat-toolbar>
 </div>
+<lib-main-menu [menuItems]="menuItems" (activeElementEmitter)="handleActive($event)"></lib-main-menu>
 <div role="main">
   <router-outlet></router-outlet>
 </div>
