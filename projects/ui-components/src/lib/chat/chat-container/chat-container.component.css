@@ -1,0 +1,13 @@
+.chat-container {
+  height: 500px;
+  width: 250px;
+  border: 16px black;
+  box-shadow: grey;
+  background: #c1c1c1;
+  padding: 15px;
+  position: relative;
+  float: right;
+  top: -370px;
+  right: 60px;
+  overflow-scrolling: auto;
+}

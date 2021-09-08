@@ -8,10 +8,12 @@ import {RolesComponent} from "./administration/roles/roles.component";
 import {IsAdministratorChildGuard} from "./guards/is-administrator-child.guard";
 import {CanDeactivateSampleGuard} from "./guards/can-deactivate-sample.guard";
 import {NotFoundComponentComponent} from "./not-found-component/not-found-component.component";
+import {CommonsComponent} from "../../projects/commons/src/lib/commons.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
+  {path: 'commons', component: CommonsComponent},
   {path: 'componentA', component: ComponentAComponent},
   {path: 'componentA/:routeParam', component: ComponentAComponent},
   {

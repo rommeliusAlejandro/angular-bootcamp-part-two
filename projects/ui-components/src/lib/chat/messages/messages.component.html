@@ -1,0 +1,4 @@
+<div *ngFor="let chatMessage of chatMessages; let i = index">
+  <span *ngIf="i % 2 === 0" class="chat-message right">{{chatMessage.body}}</span>
+  <span *ngIf="i % 2 !== 0" class="chat-message left">{{chatMessage.body}}</span>
+</div>

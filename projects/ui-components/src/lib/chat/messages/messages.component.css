@@ -1,0 +1,17 @@
+.chat-message {
+  background: bisque;
+  font-size: 12px;
+  padding: 15px;
+  border-radius: 25px;
+  margin-bottom: 15px;
+}
+
+.chat-message.right {
+  right: -16px;
+  float: right;
+}
+
+.chat-message.left {
+  left: 16px;
+  float: left;
+}

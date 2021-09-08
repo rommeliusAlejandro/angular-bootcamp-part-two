@@ -1,0 +1,11 @@
+<div class="chat-container">
+  <p>Rommel's chat</p>
+  <hr/>
+  <div>
+    <lib-messages [chatMessages]="chatMessages"></lib-messages>
+  </div>
+  <hr/>
+  <div>
+    <lib-input-box (eventEmmiter)="handleNewMessage($event)"></lib-input-box>
+  </div>
+</div>

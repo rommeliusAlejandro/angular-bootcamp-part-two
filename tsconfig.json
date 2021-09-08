@@ -3,6 +3,16 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "commons": [
+        "dist/commons/commons",
+        "dist/commons"
+      ],
+      "ui-components": [
+        "dist/ui-components/ui-components",
+        "dist/ui-components"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,

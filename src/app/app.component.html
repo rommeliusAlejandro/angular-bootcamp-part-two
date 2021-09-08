@@ -15,4 +15,6 @@
 <div role="main">
   <router-outlet></router-outlet>
 </div>
-
+<section>
+  <lib-chat-container [chatMessages]="chatMessages" (eventChatContainer)="handleMessages($event)"></lib-chat-container>
+</section>
